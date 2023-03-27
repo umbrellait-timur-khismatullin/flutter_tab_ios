@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Flutter
 
 class MainTabBarController: UITabBarController {
 
@@ -16,6 +17,8 @@ class MainTabBarController: UITabBarController {
     }
     
     private func generateTabBar() {
+        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+        let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         viewControllers = [
             generateVC(
                 viewController: HomeViewController(),
@@ -23,8 +26,8 @@ class MainTabBarController: UITabBarController {
                 image: UIImage(systemName: "house.fill")
             ),
             generateVC(
-                viewController: PersonViewController(),
-                title: "Personal Info",
+                viewController: flutterViewController,
+                title: "Flutter",
                 image: UIImage(systemName: "person.fill")
             ),
             generateVC(
