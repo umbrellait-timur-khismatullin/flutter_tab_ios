@@ -14,7 +14,6 @@
 		51C882AC2848BD2B0071A67D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AB2848BD2B0071A67D /* HomeViewController.swift */; };
 		51C882AE2848BD560071A67D /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AD2848BD560071A67D /* PersonViewController.swift */; };
 		51C882B02848BD7D0071A67D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AF2848BD7D0071A67D /* SettingsViewController.swift */; };
-		6E94EBA629D183DB001806FE /* Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E94EBA429D183DB001806FE /* Info-Debug.plist */; };
 		6ECA43DC29D17564004632AD /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AB8C229D172E40056A23F /* App.xcframework */; };
 		6ECA43DD29D17564004632AD /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E57BBCF29D16F6A00FC655C /* Flutter.xcframework */; };
 		6ECA43E029D17569004632AD /* App.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA43DE29D17569004632AD /* App.xcframework */; };
@@ -227,7 +226,6 @@
 			files = (
 				6ECA43E029D17569004632AD /* App.xcframework in Resources */,
 				6ECA43E129D17569004632AD /* Flutter.xcframework in Resources */,
-				6E94EBA629D183DB001806FE /* Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
