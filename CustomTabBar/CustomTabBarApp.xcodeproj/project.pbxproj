@@ -14,6 +14,7 @@
 		51C882AC2848BD2B0071A67D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AB2848BD2B0071A67D /* HomeViewController.swift */; };
 		51C882AE2848BD560071A67D /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AD2848BD560071A67D /* PersonViewController.swift */; };
 		51C882B02848BD7D0071A67D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AF2848BD7D0071A67D /* SettingsViewController.swift */; };
+		6E94EBA629D183DB001806FE /* Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E94EBA429D183DB001806FE /* Info-Debug.plist */; };
 		6ECA43DC29D17564004632AD /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AB8C229D172E40056A23F /* App.xcframework */; };
 		6ECA43DD29D17564004632AD /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E57BBCF29D16F6A00FC655C /* Flutter.xcframework */; };
 		6ECA43E029D17569004632AD /* App.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 6ECA43DE29D17569004632AD /* App.xcframework */; };
@@ -45,7 +46,6 @@
 		51C8829B2848BA8A0071A67D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		51C882A02848BA8B0071A67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C882A32848BA8B0071A67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51C882A52848BA8B0071A67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C882AB2848BD2B0071A67D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51C882AD2848BD560071A67D /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		51C882AF2848BD7D0071A67D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		6E57BBD029D16F6A00FC655C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
 		6E57BBD329D16F7300FC655C /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = "<group>"; };
 		6E57BBD429D16F7400FC655C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = "<group>"; };
+		6E94EBA329D183DB001806FE /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
+		6E94EBA429D183DB001806FE /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		6EC9910829CDBEF7003E201C /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Release; path = Flutter/Release; sourceTree = "<group>"; };
 		6EC9910A29CDBEFB003E201C /* Profile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Profile; path = Flutter/Profile; sourceTree = "<group>"; };
 		6EC9910C29CDBEFE003E201C /* Debug */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Debug; path = Flutter/Debug; sourceTree = "<group>"; };
@@ -137,6 +139,8 @@
 		51C882962848BA8A0071A67D /* CustomTabBarApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E94EBA429D183DB001806FE /* Info-Debug.plist */,
+				6E94EBA329D183DB001806FE /* Info-Release.plist */,
 				51C882972848BA8A0071A67D /* AppDelegate.swift */,
 				51C882992848BA8A0071A67D /* SceneDelegate.swift */,
 				51C8829B2848BA8A0071A67D /* MainTabBarController.swift */,
@@ -146,7 +150,6 @@
 				51C882AF2848BD7D0071A67D /* SettingsViewController.swift */,
 				51C882A02848BA8B0071A67D /* Assets.xcassets */,
 				51C882A22848BA8B0071A67D /* LaunchScreen.storyboard */,
-				51C882A52848BA8B0071A67D /* Info.plist */,
 			);
 			path = CustomTabBarApp;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				6ECA43E029D17569004632AD /* App.xcframework in Resources */,
 				6ECA43E129D17569004632AD /* Flutter.xcframework in Resources */,
+				6E94EBA629D183DB001806FE /* Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +391,7 @@
 					"$(PROJECT_DIR)/Flutter/Debug",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomTabBarApp/Info.plist;
+				INFOPLIST_FILE = "CustomTabBarApp/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -418,7 +422,7 @@
 					"$(PROJECT_DIR)/Flutter/Release/",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomTabBarApp/Info.plist;
+				INFOPLIST_FILE = "CustomTabBarApp/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
