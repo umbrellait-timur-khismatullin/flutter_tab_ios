@@ -18,6 +18,7 @@
 		51C882B02848BD7D0071A67D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C882AF2848BD7D0071A67D /* SettingsViewController.swift */; };
 		6E94EB9A29D17DF3001806FE /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E94EB9829D17DED001806FE /* App.xcframework */; };
 		6E94EB9B29D17DF3001806FE /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E94EB9829D17DED001806FE /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E94EB9E29D1824E001806FE /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E94EB9D29D1824E001806FE /* Info-Release.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,11 +43,12 @@
 		51C8829B2848BA8A0071A67D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		51C882A02848BA8B0071A67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C882A32848BA8B0071A67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51C882A52848BA8B0071A67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C882A52848BA8B0071A67D /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		51C882AB2848BD2B0071A67D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51C882AD2848BD560071A67D /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		51C882AF2848BD7D0071A67D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6E94EB9829D17DED001806FE /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Debug/App.xcframework; sourceTree = "<group>"; };
+		6E94EB9D29D1824E001806FE /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		51C882962848BA8A0071A67D /* CustomTabBarApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E94EB9D29D1824E001806FE /* Info-Release.plist */,
 				51C882972848BA8A0071A67D /* AppDelegate.swift */,
 				51C882992848BA8A0071A67D /* SceneDelegate.swift */,
 				51C8829B2848BA8A0071A67D /* MainTabBarController.swift */,
@@ -90,7 +93,7 @@
 				51C882AF2848BD7D0071A67D /* SettingsViewController.swift */,
 				51C882A02848BA8B0071A67D /* Assets.xcassets */,
 				51C882A22848BA8B0071A67D /* LaunchScreen.storyboard */,
-				51C882A52848BA8B0071A67D /* Info.plist */,
+				51C882A52848BA8B0071A67D /* Info-Debug.plist */,
 			);
 			path = CustomTabBarApp;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				51C882A42848BA8B0071A67D /* LaunchScreen.storyboard in Resources */,
 				51C882A12848BA8B0071A67D /* Assets.xcassets in Resources */,
+				6E94EB9E29D1824E001806FE /* Info-Release.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +328,7 @@
 				DEVELOPMENT_TEAM = U924G2S36U;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Debug/";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomTabBarApp/Info.plist;
+				INFOPLIST_FILE = "CustomTabBarApp/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -352,7 +356,7 @@
 				DEVELOPMENT_TEAM = U924G2S36U;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Release/";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomTabBarApp/Info.plist;
+				INFOPLIST_FILE = "CustomTabBarApp/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
